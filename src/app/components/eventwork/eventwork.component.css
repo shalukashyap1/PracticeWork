@@ -1,0 +1,36 @@
+.container{
+    height: 100vh;
+    background-color: black;
+    color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.con{
+    width: 50%;
+    /* background-color: rgb(246, 246, 54); */
+    border: 2px solid yellow;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px 10px;
+}
+input[type=text]{
+width: 80%;
+padding: 10px 20px;
+border-radius: 10px;
+}
+.box{
+    margin: 10px 0;
+   
+}
+button{
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 20px 0 20px 0;
+}
+textarea{
+    width: 80%;
+    height: 200px;
+    border-radius: 10px;
+}

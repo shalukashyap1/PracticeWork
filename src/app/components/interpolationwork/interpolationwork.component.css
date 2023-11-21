@@ -1,0 +1,10 @@
+table{
+    width: 50%;
+    
+    margin: auto;
+    border: 1px solid gray;
+    text-align: center;
+}
+img{
+    height: 100px;
+}

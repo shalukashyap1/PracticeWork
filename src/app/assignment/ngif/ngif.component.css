@@ -1,0 +1,62 @@
+.container{
+    width: 100%;
+    height: 600px;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.box{
+    width: 30%;
+    height:500px;
+    background-color: rgb(25, 230, 230);
+    border-radius: 20px;
+   
+}
+ul li{
+    list-style-type: none;
+   margin-left: 80px;
+   color: brown;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+ 
+    margin: 10px;
+    padding: 5px;
+    background-color: rgb(255, 0, 234);
+    border-radius: 10px;
+   
+}
+p{
+    color: red;
+}
+button{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(255, 234, 4);
+    border-radius: 20px;
+}
+input[type=text]{
+    width: 200px;
+    margin-left: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    outline: none;
+}
+.hideing{
+    margin-top: 15px;
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 300px;
+}
+li::after{
+    content: 'x';
+    text-align: center;
+    color: red;
+    font-size: 25px;
+    background-color: rgb(253, 253, 16);
+    width: 60px;
+    border-radius: 5px;
+    
+}

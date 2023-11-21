@@ -1,0 +1,44 @@
+<div class="container">
+    <h1>{{title}}</h1>
+
+    <input type="text" #colorName ><br>
+
+    <button (click)="showColor(colorName.value)">show color</button>
+
+    <ng-template [ngIf]="color==='red'">
+        <h2 style="color:red;">I am red</h2>
+    </ng-template>
+    <ng-template [ngIf]="color==='green'">
+        <h2 style="color:green;">I am green</h2>
+    </ng-template>
+    <ng-template [ngIf]="color==='yellow'">
+        <h2 style="color:yellow;">I am yellow</h2>
+    </ng-template>
+    <ng-template [ngIf]="color==='pink'">
+        <h2 style="color:pink;">I am pink</h2>
+    </ng-template>
+    <ng-template [ngIf]="color==='brown'">
+        <h2 style="color:brown;">I am brown</h2>
+    </ng-template>
+    <ng-template [ngIf]="color==='orange'">
+        <h2 style="color:orange;">I am orange</h2>
+    </ng-template>
+
+
+    <h1>{{title2}}</h1>
+
+    <input type="text" #city  placeholder="Enter your number"><br>
+    <button (click)="showChoice(city.value)">Show day</button>
+    <div [ngSwitch]="choice">
+        <h2 *ngSwitchCase="'Monday'">Today is {{choice}}</h2>
+        <h2 *ngSwitchCase="'Tuesday'">Today is {{choice}}</h2>
+        <h2 *ngSwitchCase="'Wensday'">Today is {{choice}}</h2>
+        <h2 *ngSwitchCase="'Thursday'">Today is {{choice}}</h2>
+        <h2 *ngSwitchCase="'Friday'">Today is {{choice}}</h2>
+        <h2 *ngSwitchCase="'Saturday'">Today is {{choice}}</h2>
+        <h2 *ngSwitchCase="'Sunday'">Today is {{choice}}</h2>
+        <h2 *ngSwitchDefault>Invalid</h2>
+    </div>
+
+</div>
+

@@ -1,0 +1,84 @@
+<!-- <div class="container">
+  <div class="con">
+    <h1 class="heading">Registration Form</h1>
+    <div class="box">
+      <input type="text" placeholder="Your FullName" #fn>
+    </div>
+    <div class="box">
+      <input type="email" placeholder="Your EmailId" #em>
+    </div>
+    <div class="box">
+      <input type="dob" placeholder="Your DOB" #db>
+    </div>
+    <div class="box">
+      <input type="text" placeholder="City" #ct>
+    </div>
+
+    <div class="box">
+
+      <button (submit)="submitData(fn.value,em.value,db.value,ct.value)">submit</button>
+
+    </div>
+
+  </div>
+</div>
+<div class="cont">
+  <table border="1" [cellSpacing]="0">
+
+    <tr>
+      <th>NAME</th>
+      <th>EMAIL</th>
+      <th>DOB</th>
+      <th>CITY</th>
+    </tr>
+    <tr>
+      <td>{{fullName}}</td>
+      <td>{{email}}</td>
+      <td>{{dob}}</td>
+      <td>{{city}}</td>
+
+    </tr>
+
+  </table>
+</div> -->
+
+<div class="container">
+  <div class="con">
+    <h1 class="heading">Registration Form</h1>
+    <div class="box">
+      <input type="text" placeholder="Your FullName " [(ngModel)]="fullName" >
+    </div>
+    <div class="box">
+      <input type="email" placeholder="Your EmailId " [(ngModel)]="email" >
+    </div>
+    <div class="box">
+      <input type="text" placeholder="City " [(ngModel)]="city" >
+    </div>
+    <div class="box">
+        <input type="date"  [(ngModel)]="dob" >
+      </div>
+    <div class="box">
+      <button (click)="submitData()">submit</button>
+    </div>
+  </div>
+</div>
+<div class="cont">
+  <table border="1" cellspacing="0">
+    <tr>
+      <th>SR NO</th>
+      <th>NAME</th>
+      <th>EMAIL</th>
+      <th>CITY</th>
+      <th>DOB</th>
+      <th>Delete User</th>
+    </tr>
+    <tr *ngFor="let data of submittedData;index as userno">
+      <td>{{userno+1}}</td>
+      <td>{{ data.fullName }}</td>
+      <td>{{ data.email }}</td>
+      <td>{{ data.city }}</td>
+      <td>{{ data.dob }}</td>
+      <td><input type="button" class="btn btn-success" value="remove" (click)="ondelete(userno)"></td>
+    </tr>
+  </table>
+</div>

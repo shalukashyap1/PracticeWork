@@ -1,0 +1,32 @@
+<div class="container">
+    <h1>{{title}}</h1>
+    <!-- is like of if condition -->
+    <!-- toggle for true and false condition -->
+    <button (click)="isActive=!isActive" >Toggle Data</button>
+    <div *ngIf=" isActive; ">
+    <p>Welocome to the if statement</p>
+    </div>
+
+    <!-- is like of if-else condition -->
+    <h2 *ngIf="(num%2==0); then ifBlock else oddBlock"></h2>
+    <ng-template #ifBlock>Welocome to the ifBlock</ng-template>
+    <ng-template #oddBlock>Welcome to the oddBlock</ng-template>
+
+ 
+   
+   
+</div> 
+<p
+  [id]="sayHelloId"
+  [style.color]="fontColor">
+  You can set my color in the component!
+</p>
+<button
+  type="button"
+  [disabled]="!canClick"
+  (click)="sayMessage()">
+  Trigger alert message
+</button>
+
+
+

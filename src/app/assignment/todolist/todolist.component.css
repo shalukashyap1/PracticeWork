@@ -1,0 +1,82 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(15, 0, 3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: brown;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 2px 5px;
+   
+}
+.con{
+    width: 60%;
+    height: 500px;
+    background-color: aquamarine;
+    border-radius: 10px;
+    border: 1px gold;
+}
+.box{
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    background-color: pink;
+   border-radius: 10px;
+    text-align: center;
+    margin-top: 10px;
+    content: unset;
+    border: 2px solid rgb(249, 107, 131);
+    
+}
+input{
+    width: 60%;
+    margin-top: 10px;
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 10px;
+    outline: none;
+}
+button{
+    width: 100px;
+    height: 50px;
+    background-color: tomato;
+    color: aliceblue;
+    font-weight: 500;
+    border-radius: 10px 20px;
+    margin-left: 10px;
+    font-size: 15px;
+}
+p{
+    color: red;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.rht{
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 300px;
+}
+ul li{
+    width: 80%;
+    background-color: antiquewhite;
+    margin-left: 70px;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+li::after{
+    content: 'x';
+    color: red;
+    font-size: 25px;
+    background-color: rgb(63, 220, 63);
+    width: 100px;
+    border-radius: 5px;
+    
+}

@@ -1,0 +1,21 @@
+<div>
+    <marquee behavior="" direction="left" [scrollAmount]="6">
+        <h1>Welcome to the {{title}}</h1>
+    </marquee>
+</div>
+<div class="container">
+    <div class="box">
+        <div class="con">
+            <h2>CONTACT US</h2>
+            <form>
+                <input type="email" #mailInput placeholder="Enter your mailId">
+                <input type="text" #contactInput placeholder="Enter your Contact Number">
+                <input type="text" #subjectInput placeholder="Subject">
+                <textarea cols="30" #messageInput rows="10" placeholder="Message"></textarea>
+                <button type="button"
+                    (click)="sendData(mailInput.value, contactInput.value, subjectInput.value, messageInput.value)">send</button>
+            </form>
+        </div>
+          
+    </div>
+</div>

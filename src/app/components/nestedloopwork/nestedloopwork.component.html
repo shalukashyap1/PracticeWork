@@ -1,0 +1,43 @@
+<h1 style="color: brown;">We are working on {{title}}</h1>
+<ul>
+    <li *ngFor="let n of names">Wlecome {{n}}</li>
+</ul>
+<!-- <table border="1" >
+    <tr>
+        <th>ID</th>
+        <th>NAME</th>
+        <th>USERNAME</th>
+        <th>EMAIL</th>
+        <th>CITY</th>
+        <th>PHONE</th>
+        <th>WEBSITE</th>
+    </tr>
+   <tbody *ngFor="let d of data">
+    <tr>
+        <td>{{d.id}}</td>
+        <td>{{d.name}}</td>
+        <td>{{d.username}}</td>
+        <td>{{d.email}}</td>
+        <td>{{d.city}}</td>
+        <td>{{d.phone}}</td>
+        <td>{{d.website}}</td>
+    </tr>
+   </tbody>
+</table> -->
+<button (click)="isActive=!isActive;">Toggle data</button>
+<div class="container" *ngIf="isActive">
+    <div class="box" *ngFor="let d of data">
+       
+            <h2> Welcome {{d.fname}} {{d.lname}}</h2>
+            <p>Your Skills are</p>
+            <ul>
+                <li *ngFor="let s of d.skills">{{s}}</li>
+            </ul>
+            <address>
+                {{d.address.city}}
+                {{d.address.state}}
+                {{d.address.pin}}
+            </address>
+        
+    </div>
+</div>

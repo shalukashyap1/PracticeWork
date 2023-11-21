@@ -1,0 +1,33 @@
+/* table{
+    width: 80%;
+    margin: auto;
+}
+td{
+    padding: 20px;
+} */
+.container{
+    display: flex;
+    
+}
+.box{
+    flex: 30%;
+    padding: 20px;
+    border: 12px solid gold;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+ul li{
+    display: inline-block;
+    padding: 10px;
+}
+button{
+    padding: 10 px 20px;
+    margin-bottom: 20px;
+    width: 100px;
+    height: 30px;
+    background-color: red;
+    color: aliceblue;
+    border-radius: 10px 10px 0 0;
+}

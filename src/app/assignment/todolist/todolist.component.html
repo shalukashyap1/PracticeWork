@@ -1,0 +1,24 @@
+<div class="container">
+   
+    <div class="con">
+        <h1>{{title}}</h1>
+         <div class="box">
+
+            <input type="text" #task placeholder="Add your choice">
+            <button (click)="addList(task.value)" (click)="task.value=''">AddList</button>
+            <div><p>{{errorMsg}}</p></div>
+            <div class="rht">
+            <ul >
+               
+                <li *ngFor="let l of taskList;let i=index;" (click)="remove(i)">{{l}}</li>
+            </ul>
+        </div>
+    
+        </div>
+         
+              
+           
+        
+        
+    </div>
+</div>

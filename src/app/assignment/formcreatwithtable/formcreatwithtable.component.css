@@ -1,0 +1,67 @@
+.container{
+    margin-top: 10px;
+    height:100vh;
+    background-color: black;
+    color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.con{
+    width:50%;
+    height: 330px;
+    border: 2px solid rgb(191, 191, 185);
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px 10px;
+}
+input[type=text]{
+    width: 80%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    }
+input[type=email]{
+        width: 80%;
+        padding: 10px 20px;
+        border-radius: 10px;
+    } 
+input[type=date]{
+        width: 80%;
+        padding: 10px 20px;
+        border-radius: 10px;
+    } 
+input[type=button]{
+        background-color: rgb(49, 167, 49);
+        width:100px;
+        border-radius: 5px;
+        
+    }         
+.box{
+    margin: 10px 0;
+}
+button{
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 20px 0 20px 0;
+    margin-left: 70%;
+    background-color: rgb(44, 44, 41);
+    color: aqua;
+    box-shadow: 4px 5px rgb(147, 147, 135);
+}
+.cont{
+    height:100vh;
+    background-color: rgb(138, 236, 254);
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table{
+    width: 50%;
+    margin: auto;
+    border: 1px solid gray;
+    text-align: center;
+    background-color: pink;
+}

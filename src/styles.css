@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+h1{
+    color: darkmagenta;
+    text-align: center;
+}
+li{
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}

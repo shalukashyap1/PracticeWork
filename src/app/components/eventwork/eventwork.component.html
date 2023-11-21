@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="con">
+        <h1>Event Works</h1>
+        <div class="box">
+            <input type="text" #fn placeholder="First Name">
+        </div>
+        <div class="box">
+            <input type="text" #ln placeholder="Last Name">
+        </div>
+        <div class="box">
+            <button (click)=showData(fn.value,ln.value)>Show Info</button> 
+        </div>
+        <div class="box">
+            <textarea name="" #txt cols="30" rows="10" (keyup)="showTextAreawork(txt.value)"></textarea>
+            <button (click)="forWords(txt.value)">Show four charactor data</button>
+        </div>
+        <p>
+        {{textarea}}
+        </p>
+
+        <p #pera>
+            {{fourW}}
+        </p>
+    </div>
+</div>

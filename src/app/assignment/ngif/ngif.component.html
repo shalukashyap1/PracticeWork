@@ -1,0 +1,16 @@
+<div class="container">
+<div class="box">
+    <h1>{{title}}</h1>
+    <button (click)="isHave=!isHave">Hide & Show</button>
+    <input type="text" #addF placeholder="Add your new Friend"/>
+    <button (click)="addFriends(addF.value)" (click)="addF.value=''">ADD</button>
+    <div><p>{{errorMsg}}</p></div>
+    <div class="hideing">
+        <ul *ngIf="isHave!isHave">
+            <li *ngFor="let item of friendslist;let i=index;" (click)="remove(i)">
+                {{ item.name }} is {{ item.age }} years old
+            </li>
+        </ul>
+    </div>
+</div>
+</div>
